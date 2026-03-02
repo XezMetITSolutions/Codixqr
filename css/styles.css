@@ -1406,11 +1406,15 @@ section {
     }
 
     .tech-card {
-        flex: 0 0 100%;
+        flex: 0 0 calc(50% - 15px);
+        padding: 20px 15px;
     }
 
+    /* Changed to 2 per row */
     .partner-box {
-        flex: 0 0 180px;
+        flex: 0 0 160px;
+        padding: 16px;
+        font-size: 0.75rem;
     }
 
     .contact-form-wrapper {
@@ -1422,11 +1426,31 @@ section {
     }
 
     section {
-        padding: 50px 0;
+        padding: 40px 0;
     }
 
     .section-header h2 {
         font-size: 1.8rem;
+    }
+
+    .section-header {
+        margin-bottom: 32px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    /* 2 columns for projects */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    /* 2 columns for services */
+    .service-card {
+        padding: 20px;
     }
 }
 
@@ -1438,9 +1462,69 @@ section {
 
     .btn {
         width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 
     .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    /* Fix overlapping badges in About section */
+    .floating-badges-container {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .badge-item {
+        position: static !important;
+        width: calc(50% - 6px);
+        padding: 12px;
+        border-radius: var(--radius);
+        animation: none !important;
+        transform: none !important;
+    }
+
+    .badge-center-logo {
+        display: none;
+        /* Hide large center logo on mobile to save space */
+    }
+
+    .badge-icon {
+        font-size: 1.2rem;
+    }
+
+    .badge-text strong {
+        font-size: 0.85rem;
+    }
+
+    .badge-text span {
+        font-size: 0.7rem;
+    }
+
+    .tech-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .project-card {
+        padding: 16px;
+    }
+
+    .project-card h3 {
+        font-size: 1rem;
+        margin: 4px 0 8px;
+    }
+
+    .project-card p {
+        font-size: 0.8rem;
+        line-height: 1.4;
     }
 }
