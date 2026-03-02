@@ -58,21 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Floating button toggle
-    const floatingBtn = document.getElementById('floatingBtn');
-    const floatingMenu = document.getElementById('floatingMenu');
-    
-    floatingBtn?.addEventListener('click', () => {
-        floatingMenu?.classList.toggle('active');
-    });
-
-    // Close floating menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!floatingBtn?.contains(e.target) && !floatingMenu?.contains(e.target)) {
-            floatingMenu?.classList.remove('active');
-        }
-    });
-
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
