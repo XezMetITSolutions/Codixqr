@@ -681,12 +681,14 @@ section {
     overflow: hidden;
     position: relative;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .tech-track {
     display: flex;
-    gap: 12px;
-    animation: scrollTech 40s linear infinite;
+    gap: 16px;
+    animation: scrollTech 35s linear infinite;
     width: max-content;
 }
 
@@ -704,7 +706,8 @@ section {
 }
 
 .tech-card {
-    flex: 0 0 160px;
+    flex: 0 0 auto;
+    width: 180px;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -719,15 +722,16 @@ section {
 }
 
 .tech-icon {
-    font-size: 1.8rem;
+    font-size: 2rem;
     display: block;
     margin-bottom: 10px;
 }
 
 .tech-card h4 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-bottom: 4px;
     font-weight: 600;
+    color: var(--text-primary);
 }
 
 .tech-desc {
@@ -1423,17 +1427,17 @@ section {
     }
 
     .tech-card {
-        flex: 0 0 140px;
-        padding: 16px 12px;
+        width: 150px;
+        padding: 18px 14px;
     }
 
     .tech-icon {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         margin-bottom: 8px;
     }
 
     .tech-card h4 {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
     .tech-desc {
@@ -1461,7 +1465,21 @@ section {
     }
 
     .tech-card {
-        flex: 0 0 110px;
+        flex: 0 0 130px;
+        padding: 14px 10px;
+    }
+
+    .tech-icon {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+
+    .tech-card h4 {
+        font-size: 0.75rem;
+    }
+
+    .tech-desc {
+        font-size: 0.65rem;
     }
 
     .floating-btn {
