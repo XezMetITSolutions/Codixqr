@@ -281,13 +281,30 @@
             </div>
             <p class="projects-more">Ve daha fazlası… Projeleriniz için <a href="#contact">bizimle iletişime geçin</a>.
             </p>
-            <div class="social-impact">
-                <div class="impact-content">
-                    <span class="impact-icon">💚</span>
-                    <div>
-                        <h3>Toplumsal Katkı</h3>
-                        <p>Bir Soru Bir Sevap gibi vakıf projelerinde yer aldık. Gönüllü faaliyetler ve toplum yararına
-                            yazılım geliştirme projeleriyle sektörde fark yaratıyoruz.</p>
+            <!-- Social Impact Card -->
+            <div class="impact-section-wrapper">
+                <div class="impact-card">
+                    <div class="impact-badge">
+                        <span class="pulse-dot"></span>
+                        Toplumsal Katkı
+                    </div>
+                    <div class="impact-grid-mini">
+                        <div class="impact-main">
+                            <h3>Birlikte <span class="highlight">Daha Güçlüyüz</span></h3>
+                            <p>Sadece kod yazmıyoruz, topluma değer katmaya çalışıyoruz. <strong>Bir Soru Bir
+                                    Sevap</strong> gibi vakıf projelerinde gönüllü yer alarak, teknolojiyi iyilik için
+                                kullanıyoruz.</p>
+                        </div>
+                        <div class="impact-stats-mini">
+                            <div class="i-stat">
+                                <strong>Gönüllülük</strong>
+                                <span>Esaslı Projeler</span>
+                            </div>
+                            <div class="i-stat">
+                                <strong>Açık Kaynak</strong>
+                                <span>Desteği</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -546,32 +563,67 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="footer-logo">CodiXQR</span>
-                    <p>Dijital dönüşümde güvenilir yazılım ortağınız</p>
+            <div class="footer-top">
+                <div class="footer-brand-column">
+                    <a href="#" class="footer-logo">CodiXQR</a>
+                    <p class="footer-tagline">Dijital dönüşümde güvenilir yazılım ortağınız. Teknopark vizyonuyla global
+                        çözümler.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="X (Twitter)">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Ürünler</h4>
-                    <a href="https://restxqr.com" target="_blank" rel="noopener">RestXQR</a>
-                    <a href="https://roomxqr.com" target="_blank" rel="noopener">RoomXQR</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Şirket</h4>
-                    <a href="#about">Hakkımızda</a>
-                    <a href="#projects">Projeler</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#contact">İletişim</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Yasal</h4>
-                    <a href="gizlilik.html">Gizlilik Politikası</a>
-                    <a href="kullanim-kosullari.html">Kullanım Koşulları</a>
-                    <a href="yasal-bilgiler.html">Yasal Bilgiler</a>
+                <div class="footer-nav-columns">
+                    <div class="footer-links-group">
+                        <h5>Ürünler</h5>
+                        <ul>
+                            <li><a href="https://restxqr.com" target="_blank" rel="noopener">RestXQR</a></li>
+                            <li><a href="https://roomxqr.com" target="_blank" rel="noopener">RoomXQR</a></li>
+                            <li><a href="#partnership">Özel Çözümler</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h5>Kurumsal</h5>
+                        <ul>
+                            <li><a href="#about">Hakkımızda</a></li>
+                            <li><a href="#projects">Projelerimiz</a></li>
+                            <li><a href="#contact">Bize Ulaşın</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h5>Yasal</h5>
+                        <ul>
+                            <li><a href="gizlilik.html">Gizlilik Politikası</a></li>
+                            <li><a href="kullanim-kosullari.html">Kullanım Şartları</a></li>
+                            <li><a href="yasal-bilgiler.html">KVKK</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 CodiXQR. Tüm hakları saklıdır.</p>
+                <div class="footer-bottom-content">
+                    <p>© 2026 CodiXQR. Tüm hakları saklıdır.</p>
+                    <div class="footer-bottom-extra">
+                        <span>Built with Excellence</span>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
