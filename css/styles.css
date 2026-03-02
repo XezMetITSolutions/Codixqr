@@ -356,15 +356,17 @@ section {
 }
 
 .section-header h2 {
-    font-size: clamp(2rem, 3.5vw, 2.5rem);
-    /* Reduced scale */
-    margin-bottom: 12px;
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    margin-bottom: 10px;
+}
+
+.tech-section .section-header h2 {
+    font-size: 1.4rem;
 }
 
 .section-header p {
     color: var(--text-secondary);
-    font-size: 1.05rem;
-    /* Reduced */
+    font-size: 0.95rem;
 }
 
 .section-tag {
@@ -821,7 +823,8 @@ section {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 32px 24px;
+    padding: 20px 16px;
+    /* Reduced from 32px 24px */
     text-align: center;
     transition: var(--transition);
 }
@@ -833,14 +836,16 @@ section {
 }
 
 .tech-icon {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+    /* Reduced from 2.5rem */
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .tech-card h4 {
-    font-size: 1rem;
-    margin-bottom: 8px;
+    font-size: 0.95rem;
+    /* Reduced */
+    margin-bottom: 4px;
     font-weight: 600;
     color: var(--text-primary);
 }
@@ -1655,11 +1660,13 @@ section {
     }
 
     .section-header h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        /* Reduced from 1.8rem */
     }
 
     .section-header {
-        margin-bottom: 32px;
+        margin-bottom: 24px;
+        /* Reduced padding */
     }
 
     .projects-grid {
