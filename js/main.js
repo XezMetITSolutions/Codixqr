@@ -49,12 +49,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const techNext = document.querySelector('.tech-next');
 
     if (techTrack && techPrev && techNext) {
-        const cardWidth = 200;
+        const scrollAmount = 400;
         techPrev.addEventListener('click', () => {
-            techTrack.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+            techTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
         });
         techNext.addEventListener('click', () => {
-            techTrack.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            techTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+    }
+
+    // Partners slider arrows
+    const partnersSlider = document.querySelector('.partners-slider');
+    const partnerPrev = document.querySelector('.partner-prev');
+    const partnerNext = document.querySelector('.partner-next');
+
+    if (partnersSlider && partnerPrev && partnerNext) {
+        const scrollAmount = 600;
+        partnerPrev.addEventListener('click', () => {
+            partnersSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+        partnerNext.addEventListener('click', () => {
+            partnersSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         });
     }
 

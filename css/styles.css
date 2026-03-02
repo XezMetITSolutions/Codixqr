@@ -676,7 +676,7 @@ section {
     color: var(--accent);
 }
 
-.tech-track {
+.tech-slider {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -684,6 +684,7 @@ section {
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
 }
 
 .tech-track::-webkit-scrollbar { display: none; }
@@ -697,6 +698,18 @@ section {
     text-align: center;
     scroll-snap-align: start;
     transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .tech-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-card {
+        flex: 0 0 calc(50% - 10px);
+    }
 }
 
 .tech-card:hover {
@@ -719,16 +732,33 @@ section {
     color: var(--text-muted);
 }
 
-/* ===== Partners ===== */
-.partners-grid-modern {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    max-width: 1000px;
+/* ===== Partners Slider ===== */
+.partners-slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1100px;
     margin: 0 auto;
+    position: relative;
+}
+
+.partners-slider {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+    flex: 1;
+}
+
+.partners-slider::-webkit-scrollbar {
+    display: none;
 }
 
 .partner-box {
+    flex: 0 0 280px;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -740,6 +770,9 @@ section {
     color: var(--text-primary);
     transition: var(--transition);
     text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    scroll-snap-align: start;
 }
 
 .partner-box:hover {
@@ -747,6 +780,52 @@ section {
     background: var(--bg-card-hover);
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(34, 211, 238, 0.2);
+}
+
+.partner-arrow {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.partner-arrow:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--bg-card-hover);
+}
+
+@media (max-width: 768px) {
+    .partners-slider {
+        gap: 12px;
+    }
+
+    .partner-box {
+        flex: 0 0 calc(33.333% - 8px);
+        font-size: 0.7rem;
+        padding: 20px 16px;
+        letter-spacing: 0.05em;
+    }
+
+    .partner-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-box {
+        flex: 0 0 calc(33.333% - 8px);
+        font-size: 0.65rem;
+        padding: 18px 12px;
+    }
 }
 
 /* ===== About ===== */
@@ -1141,7 +1220,11 @@ section {
 }
 
 /* ===== Floating Action Button - WhatsApp ===== */
-.floating-btn {
+    .tech-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .floating-btn {
     position: fixed;
     bottom: 32px;
     right: 32px;
@@ -1310,9 +1393,34 @@ section {
         letter-spacing: 0.05em;
     }
 
+    .partners-slider-wrapper {
+        gap: 12px;
+    }
+
+    .partners-slider {
+        gap: 12px;
+    }
+
+    .partner-box {
+        flex: 0 0 calc(33.333% - 8px);
+        font-size: 0.7rem;
+        padding: 20px 16px;
+        letter-spacing: 0.05em;
+    }
+
+    .partner-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 1.25rem;
+    }
+
     .blog-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .tech-card {
+        flex: 0 0 calc(50% - 10px);
     }
 }
 
@@ -1329,9 +1437,16 @@ section {
 
     .btn { width: 100%; }
 
-    .tech-card { flex: 0 0 160px; }
+    .partner-box {
+        flex: 0 0 calc(33.333% - 8px);
+        font-size: 0.65rem;
+        padding: 18px 12px;
+    }
 
-    .floating-btn {
+    .tech-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
         bottom: 20px;
         right: 20px;
         width: 56px;
