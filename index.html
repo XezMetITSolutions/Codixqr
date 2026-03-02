@@ -229,80 +229,9 @@
                 <h2>Uzmanlık Alanımızdaki <span class="highlight">Platformlar</span></h2>
                 <p>Dijital dünyanın önde gelen platformları ve teknolojileriyle çalışıyor, işletmeniz için özel çözümler sunuyoruz.</p>
             </div>
-            <div class="tech-slider">
+            <div class="tech-slider-wrapper">
+                <button class="tech-arrow tech-prev" aria-label="Önceki">&#8249;</button>
                 <div class="tech-track">
-                    <!-- First Set -->
-                    <div class="tech-card">
-                        <span class="tech-icon">⚛️</span>
-                        <h4>React & Node.js</h4>
-                        <span class="tech-desc">Web Geliştirme</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">📘</span>
-                        <h4>TypeScript</h4>
-                        <span class="tech-desc">Tip Güvenli Kodlama</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">☁️</span>
-                        <h4>AWS & Azure</h4>
-                        <span class="tech-desc">Bulut Altyapısı</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">🐳</span>
-                        <h4>Docker</h4>
-                        <span class="tech-desc">Konteynerleştirme</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">🗄️</span>
-                        <h4>PostgreSQL</h4>
-                        <span class="tech-desc">İlişkisel Veritabanı</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">🍃</span>
-                        <h4>MongoDB</h4>
-                        <span class="tech-desc">NoSQL Veritabanı</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">🔌</span>
-                        <h4>REST & GraphQL</h4>
-                        <span class="tech-desc">API Geliştirme</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">📧</span>
-                        <h4>Mailchimp</h4>
-                        <span class="tech-desc">E-Posta Pazarlama</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">📊</span>
-                        <h4>Google Analytics</h4>
-                        <span class="tech-desc">Web Analizi</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">🔍</span>
-                        <h4>SEO Araçları</h4>
-                        <span class="tech-desc">Arama Optimizasyonu</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">💳</span>
-                        <h4>Stripe</h4>
-                        <span class="tech-desc">Ödeme Entegrasyonu</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">🎨</span>
-                        <h4>Figma</h4>
-                        <span class="tech-desc">UI/UX Tasarım</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">🔥</span>
-                        <h4>Firebase</h4>
-                        <span class="tech-desc">Mobil & Backend</span>
-                    </div>
-                    <div class="tech-card">
-                        <span class="tech-icon">📦</span>
-                        <h4>Git & GitHub</h4>
-                        <span class="tech-desc">Versiyon Kontrol</span>
-                    </div>
-                    <!-- Duplicate Set for Seamless Loop -->
                     <div class="tech-card">
                         <span class="tech-icon">⚛️</span>
                         <h4>React & Node.js</h4>
@@ -374,6 +303,7 @@
                         <span class="tech-desc">Versiyon Kontrol</span>
                     </div>
                 </div>
+                <button class="tech-arrow tech-next" aria-label="Sonraki">&#8250;</button>
             </div>
         </div>
     </section>
@@ -409,23 +339,47 @@
                     <h2>Dijital Dönüşümde <span class="highlight">Deneyim</span></h2>
                     <p>CodiXQR olarak farklı sektörlerde özel yazılım ve SaaS çözümleri geliştiriyoruz. Teknopark onaylı projelerimiz bulunmakta olup, Avrupa'da da faaliyet gösteriyoruz.</p>
                     <p>Bulut tabanlı, mevcut sistemlere kolay entegre olan çözümler sunuyoruz. Deneyimli ekibimiz ve referanslarımızla iş ortaklarımızın dijital hedeflerine ulaşmasına yardımcı oluyoruz.</p>
-                    <ul class="about-features">
-                        <li>✓ Deneyimli ekip</li>
-                        <li>✓ Bulut tabanlı mimari</li>
-                        <li>✓ Kolay entegrasyon</li>
-                        <li>✓ Ölçeklenebilir sistemler</li>
-                        <li>✓ Teknik destek</li>
-                    </ul>
+                    
+                    <div class="about-action-buttons">
+                        <a href="#contact" class="action-chip">Proje Başlat →</a>
+                        <a href="#contact" class="action-chip">Teknik Danışmanlık</a>
+                        <a href="#projects" class="action-chip">Portföyü Gez</a>
+                        <a href="#contact" class="action-chip">Demo Talep Et</a>
+                    </div>
                 </div>
                 <div class="about-visual">
-                    <div class="trust-box">
-                        <h4>CodiXQR</h4>
-                        <ul>
-                            <li>Teknopark onaylı projelerimiz</li>
-                            <li>Avrupa operasyonu</li>
-                            <li>50+ tamamlanan proje</li>
-                            <li>7/24 destek</li>
-                        </ul>
+                    <div class="floating-badges-container">
+                        <div class="badge-item b-1">
+                            <span class="badge-icon">🚀</span>
+                            <div class="badge-text">
+                                <strong>Teknopark</strong>
+                                <span>Onaylı Projeler</span>
+                            </div>
+                        </div>
+                        <div class="badge-item b-2">
+                            <span class="badge-icon">🌍</span>
+                            <div class="badge-text">
+                                <strong>Avrupa</strong>
+                                <span>Operasyonu</span>
+                            </div>
+                        </div>
+                        <div class="badge-item b-3">
+                            <span class="badge-icon">🏆</span>
+                            <div class="badge-text">
+                                <strong>50+</strong>
+                                <span>Başarılı Proje</span>
+                            </div>
+                        </div>
+                        <div class="badge-item b-4">
+                            <span class="badge-icon">⚡</span>
+                            <div class="badge-text">
+                                <strong>7/24</strong>
+                                <span>Destek</span>
+                            </div>
+                        </div>
+                        <div class="badge-center-logo">
+                            <span class="logo-text-full">CodiXQR</span>
+                        </div>
                     </div>
                 </div>
             </div>

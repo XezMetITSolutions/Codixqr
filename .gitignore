@@ -1,0 +1,23 @@
+# IDE
+.idea/
+.vscode/
+
+# Node
+node_modules/
+restxqr/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+*.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build
+dist/
+build/

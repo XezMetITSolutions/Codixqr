@@ -1,0 +1,36 @@
+name: 🚀 Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy:
+    name: Deploy via FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ✅ Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # needed for FTP sync to detect changed files
+
+      - name: 📦 Sync files to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}          # usually 21
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}   # e.g. /public_html/
+          local-dir: ./                          # root of the repo
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.idea/**
+            restxqr/node_modules/**
+            *.bat
+          dangerous-clean-slate: false           # set true only if you want to wipe remote first
