@@ -676,92 +676,62 @@ section {
     color: var(--accent);
 }
 
+/* ===== Tech Slider - Auto Scroll ===== */
 .tech-slider {
-    display: flex;
-    align-items: center;
-    gap: 16px;
     overflow: hidden;
-}
-
-.tech-arrow {
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid var(--border);
-    background: var(--bg-card);
-    color: var(--text-secondary);
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.tech-arrow:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+    position: relative;
+    width: 100%;
 }
 
 .tech-track {
     display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 8px 0;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
+    gap: 16px;
+    animation: scrollTech 30s linear infinite;
+    width: max-content;
 }
 
-.tech-track::-webkit-scrollbar { display: none; }
+@keyframes scrollTech {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.tech-track:hover {
+    animation-play-state: paused;
+}
 
 .tech-card {
-    flex: 0 0 180px;
+    flex: 0 0 140px;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 24px;
+    padding: 16px 12px;
     text-align: center;
-    scroll-snap-align: start;
     transition: var(--transition);
 }
 
 .tech-card:hover {
     border-color: rgba(6, 182, 212, 0.3);
+    transform: translateY(-4px);
 }
 
 .tech-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .tech-card h4 {
-    font-size: 1rem;
-    margin-bottom: 4px;
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+    font-weight: 600;
 }
 
 .tech-desc {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-}
-
-.tech-card:hover {
-    border-color: rgba(6, 182, 212, 0.3);
-}
-
-.tech-icon {
-    font-size: 2rem;
-    display: block;
-    margin-bottom: 12px;
-}
-
-.tech-card h4 {
-    font-size: 1rem;
-    margin-bottom: 4px;
-}
-
-.tech-desc {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
 }
 
@@ -1453,13 +1423,7 @@ section {
     }
 
     .tech-card {
-        flex: 0 0 calc(50% - 10px);
-    }
-
-    .tech-arrow {
-        width: 36px;
-        height: 36px;
-        font-size: 1.25rem;
+        flex: 0 0 120px;
     }
 }
 
@@ -1483,13 +1447,7 @@ section {
     }
 
     .tech-card {
-        flex: 0 0 calc(50% - 10px);
-    }
-
-    .tech-arrow {
-        width: 32px;
-        height: 32px;
-        font-size: 1.1rem;
+        flex: 0 0 110px;
     }
 
     .floating-btn {
