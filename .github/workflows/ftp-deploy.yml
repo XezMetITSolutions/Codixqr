@@ -24,7 +24,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}          # usually 21
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}   # e.g. /public_html/
+          server-dir: ${{ secrets.FTP_SERVER_DIR || './' }}   # defaults to root if secret not set
           local-dir: ./                          # root of the repo
           exclude: |
             **/.git*
